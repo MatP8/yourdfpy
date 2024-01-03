@@ -205,7 +205,7 @@ class Visual:
 
 @dataclass(eq=False)
 class Collision:
-    name: str
+    name: str = None
     origin: Optional[np.ndarray] = None
     geometry: Geometry = None
 
